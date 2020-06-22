@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Raleway:400,100,300,700,500");
+
+
+body { margin: 0; padding: 0;
+      font-family: "Open Sans", "Helvetica", "sans-serif";
+      text-align: center;
+      font-size: 20px;
+        color: white;
+        text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+        background-color: #2a9d8f;
+     }
+
+}
+
+h1 {
+  font-family: "Raleway", "Helvetica", "sans-serif";
+
+}
+
+
+.flex-container {
+  flex-wrap: wrap;
+  margin:60px;
+}
+
+.flex-item {
+  align-content: center;
+
+}
+
+
+.field {
+  font-size: 14px;
+  padding: 10px 8px 10px 14px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  position: relative;
+  margin: 10px;
+}
+
+
+
+.btn {
+  font-size: 14px;
+  color: white;
+  padding: 10px 8px 10px 14px;
+  border-radius: 6px;
+  background: #e9c46a;
+  transition: background 0.3s ease;
+  margin: 10px;
+
+}
+
