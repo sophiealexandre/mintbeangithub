@@ -1,117 +1,58 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" type="image/png" href="http://sophiealexandre.eu/favicon"/>
-    <title>MintBean Project</title>
-  </head>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>MintBean GitHub API</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" type="image/png" href="http://sophiealexandre.eu/favicon"/>
 
-  <!-- Title and logo -->
-  <body class="text-center" style="background-color:white;">
-      <div class="container" style="padding: 25px">
-        <h1>[ HELLO LOMO ! ]</h1>
-        <img src="http://sophiealexandre.eu/img/lomography.png" style="width: 200px;height: 200px" alt="">
-      </div>
+</head>
+<body>
 
+  <div class="flex-container">
+    <div class="flex-item">
+      <h1 id="who">Who are you looking for?</h1>
+      <h1 id="meet1"></h1>
+    </div>
+    </div>
+    <div class="flex-item">
+      <img src="http://sophiealexandre.eu/imagesgithub/Octocat.png" id="cat" style="width: 400px;border-radius: 20%">
+    </div>
+    <div class="flex-item">
+      <img id="myImg" style="width: 400px;border-radius: 20%;padding: 20px"></img>
+    </div>
+    <div class="flex-item" id="hide">
+      <div class="flex-item"></div>
+      <input type="text" placeholder="Name" id="in" class="field">
+      <a class="btn" onclick="getValue();">Let's go!</a>
+      <a class="btn" onClick="window.location.reload();">Refresh Page</a>
+    </div>
+    <div>
+      <a id="hide2" style="display:none" class="btn" onClick="window.location.reload();">Refresh Page</a>
 
-    <div class="container" style="padding: 10px">
-      <h2>Why would you have boring photos...</h2>
-      <h2>... when you can have lomos?</h2>
+    </div>
+    <div class="flex-item">
+      <p id="meet2" style="margin: 50px"></p>
     </div>
 
-
-
-<!-- Searchbar -->
-
-    <div class="container" id="question">
-      <div class="row">
-         <div class="col-12 col-lg-12">
-            <div class="card">
-              <h3>What are you looking for?</h3>
-                <div class="search-form-control form-group">
-                  <input class="form-control string required" onkeyup="getValue()" placeholder="I'm looking for this!" type="text" id="in"  />
-                  <button class="btn btn-flat"onclick="getValue()">Search</button>
-                </div>
-            </div>
-          </div>
-      </div>
-    </div>
-<!-- Results (hidden) -->
-      <div class="container" id="allpic"style="display: none;" >
-        <div class="row">
-            <div class="col-12 col-lg-4">
-               <div class="lomo">
-                  <img id="result1" src="" style="">
-              </div>
-            </div>
-
-            <div class="col-12 col-lg-4">
-               <div class="lomo">
-                <img id="result2" src="" style="">
-              </div>
-            </div>
-            <div class="col-12 col-lg-4">
-               <div class="lomo">
-                <img id="result3" src="" style="">
-              </div>
-            </div>
-         </div>
-
-         <div class="row">
-             <div class="col-12 col-lg-4">
-                <div class="lomo">
-                   <img id="result4" src="" style="">
-               </div>
-             </div>
-
-             <div class="col-12 col-lg-4">
-                <div class="lomo">
-                 <img id="result5" src="" style="">
-               </div>
-             </div>
-             <div class="col-12 col-lg-4">
-                <div class="lomo">
-                 <img id="result6" src="" style="">
-               </div>
-             </div>
-          </div>
-
-          <div class="row">
-              <div class="col-12 col-lg-4">
-                 <div class="lomo">
-                    <img id="result7" src="" style="">
-                </div>
-              </div>
-
-              <div class="col-12 col-lg-4">
-                 <div class="lomo">
-                  <img id="result8" src="" style="">
-                </div>
-              </div>
-              <div class="col-12 col-lg-4">
-                 <div class="lomo">
-                  <img id="result9" src="" style="">
-                </div>
-              </div>
-           </div>
-      </div>
+  </div>
 
 
 
 
 
+</div>
 
 
-    </form>
 
-    <!-- Including Bootstrap JS (with its Popper.js / jQuery dependency) so that dynamic components work -->
-    <script  src="./script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
-  </body>
+<!-- partial:index.partial.html -->
+<body>
+
+<!-- partial -->
+<script  src="./script.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
 </html>
